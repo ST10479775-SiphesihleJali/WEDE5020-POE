@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Code Attribution
+    Author: John Doe
+    Title: Html Introduction
+    Date Published: 2025-07-28
+    Link/URL: https://www.geeksforgeeks.org/html/html-introduction/
+    Date accessed: 2025-08-25
+    -->
+
+  <meta charset="UTF-8">
+  <!-- Ensures proper text rendering across browsers -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenSteps | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- ================== HEADER ================== -->
+  <header>
+    <h1>🌱 GreenSteps Community Gardens</h1>
+
+    <!--Code Attribution
+    Author: John Doe
+    Title: Understanding HTML Navigation
+    Date Published: 2025-07-28
+    Link/URL: https://www.geeksforgeeks.org/html/html-nav-tag/
+    Date accessed: 2025-08-25
+    -->
+
+    <!-- Navigation bar: active state shows user where they are -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="impact.html">Impact Stories</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================== MAIN CONTENT ================== -->
+  <main>
+            <section id="contact">
+            <h2>Contact Us</h2>
+            
+            <div>
+                <div>
+                    <img src="https://th.bing.com/th/id/R.ca1f598f3f509b3ab016672a4589b266?rik=AhwpIqPDmsrmHg&riu=http%3a%2f%2ftoursmaps.com%2fwp-content%2fuploads%2f2017%2f10%2fcape-town-map_9.gif&ehk=wc8WYc65NQrlyEqZHE9T2jcKZjsRThULI5TjuRHrwdw%3d&risl=&pid=ImgRaw&r=0" alt="Map of Cape Town" width="500" height="300">
+                    
+
+                    <!-- ===== Contact Form ===== -->
+                    <!-- Forms allow users to send inquiries directly -->
+                    <!-- "required" attribute enforces input validation in the browser -->
+                    <h3>Contact Us</h3>
+                    <form>
+                        <div>
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div>
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Please select...</option>
+                                <option value="volunteer">Volunteer Opportunities</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="donation">Donation Information</option>
+                                <option value="training">Training Request</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+
+                         <!-- Submit button sends the form -->
+                        <button type="submit">📧 Send Message</button>
+                    </form>
+                </div>
+                
+                <div>
+                    <!-- ===== Contact Info Section ===== -->
+                    <h3>Contact Information</h3>
+                    
+                    <img src="https://cdn.pixabay.com/photo/2015/07/08/20/12/table-mountain-836847_1280.jpg" alt="Cape Town city view with Table Mountain in background" width="400" height="250">
+                    
+                    <div>
+                        <p><strong>Head Office</strong></p>
+                        <p>123 Garden Street, Observatory<br>
+                        Cape Town, 7925<br>
+                        South Africa</p>
+                    </div>
+                    
+                    <div>
+                        <p><strong>Phone:</strong> +27 (0)21 448 7890</p>
+                        <p><strong>Email:</strong> info@greensteps.org.za</p>
+                    </div>
+                    
+                    <div>
+                        <p><strong>Office Hours:</strong></p>
+                        <p>Monday - Friday: 8:00 AM - 4:30 PM<br>
+                        Saturday: 9:00 AM - 1:00 PM</p>
+                    </div>
+                    
+                    <h4>Regional Offices</h4>
+                    <p><strong>Johannesburg:</strong> +27 (0)11 234 5678<br>
+                    <strong>Durban:</strong> +27 (0)31 345 6789<br>
+                    <strong>Bloemfontein:</strong> +27 (0)51 456 7890</p>
+                </div>
+            </div>
+        </section>
+  </main>
+
+    <!-- ================== FOOTER ================== -->
+  <footer>
+    <p>&copy; 2025 GreenSteps Community Gardens. All rights reserved.</p>
+  </footer>
+</body>
+</html>
