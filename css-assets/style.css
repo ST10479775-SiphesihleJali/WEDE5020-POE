@@ -1,0 +1,561 @@
+/* ================== RESET & BASE ================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #fafafa;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ================== CSS VARIABLES ================== */
+:root {
+    /* Improved Color Palette */
+    --primary-green: #3d6b23;
+    --secondary-green: #5a8f3f;
+    --accent-green: #7cb342;
+    --light-green: #b8e6a0;
+    --earth-brown: #8d6e63;
+    --warm-orange: #ff9800;
+    --text-dark: #2e2e2e;
+    --text-light: #666;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --shadow-hover: rgba(0, 0, 0, 0.15);
+    
+    /* Typography */
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    /* Spacing - improved mobile values */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* ================== TYPOGRAPHY ================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    line-height: 1.2;
+    margin-bottom: var(--space-sm);
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: var(--space-md);
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin-bottom: var(--space-sm);
+    color: var(--text-dark);
+}
+
+strong {
+    color: var(--primary-green);
+    font-weight: 600;
+}
+
+/* ================== HEADER & NAVIGATION ================== */
+header {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+    color: var(--white);
+    padding: var(--space-md) 0;
+    box-shadow: 0 2px 10px var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: var(--space-md);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: var(--space-xs) var(--space-md);
+    color: var(--white);
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+nav a:focus-visible {
+    outline: 2px solid var(--warm-orange);
+    outline-offset: 2px;
+}
+
+nav a.active {
+    background-color: var(--warm-orange);
+    color: var(--white);
+    font-weight: 600;
+}
+
+/* ================== MAIN CONTENT ================== */
+main {
+    min-height: calc(100vh - 200px);
+    padding: var(--space-xl) 0;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+section > h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: var(--space-xl);
+    position: relative;
+    padding-bottom: var(--space-sm);
+}
+
+section > h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-green), var(--light-green));
+    border-radius: 2px;
+}
+
+/* ================== HERO SECTION ================== */
+.hero {
+    text-align: center;
+    padding: var(--space-xl) var(--space-md);
+    background: linear-gradient(135deg, rgba(184, 230, 160, 0.2), rgba(124, 179, 66, 0.1));
+    border-radius: 15px;
+    margin-bottom: var(--space-xl);
+}
+
+.hero h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: var(--primary-green);
+    margin-bottom: var(--space-md);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto var(--space-lg);
+}
+
+.hero img {
+    margin: var(--space-xl) auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px var(--shadow);
+    transition: transform var(--transition-slow), box-shadow var(--transition-slow);
+}
+
+.hero img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 50px var(--shadow-hover);
+}
+
+/* Call-to-Action Buttons */
+.cta-buttons {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: var(--space-xl);
+}
+
+.cta-buttons a {
+    display: inline-block;
+    padding: var(--space-md) var(--space-xl);
+    background: var(--accent-green);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all var(--transition-normal);
+    box-shadow: 0 4px 15px rgba(124, 179, 66, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-buttons a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width var(--transition-slow), height var(--transition-slow);
+}
+
+.cta-buttons a:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.cta-buttons a:hover {
+    background: var(--secondary-green);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(124, 179, 66, 0.4);
+}
+
+.cta-buttons a:focus-visible {
+    outline: 3px solid var(--warm-orange);
+    outline-offset: 3px;
+}
+
+.cta-buttons a:first-child {
+    background: var(--warm-orange);
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+}
+
+.cta-buttons a:first-child:hover {
+    background: #e68900;
+    box-shadow: 0 6px 20px rgba(255, 152, 0, 0.4);
+}
+
+/* ================== CARD LAYOUTS ================== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-xl);
+}
+
+.card {
+    background: var(--white);
+    padding: var(--space-lg);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px var(--shadow);
+    transition: all var(--transition-normal);
+    border-top: 4px solid var(--accent-green);
+    position: relative;
+    overflow: hidden;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(124, 179, 66, 0.05), transparent);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+    pointer-events: none;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px var(--shadow-hover);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: var(--space-md);
+    transition: transform var(--transition-slow);
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    color: var(--primary-green);
+    margin-bottom: var(--space-sm);
+}
+
+.card p {
+    color: var(--text-dark);
+}
+
+/* ================== STATISTICS SECTION ================== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-xl) 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg);
+    background: linear-gradient(135deg, var(--light-green), var(--accent-green));
+    border-radius: 15px;
+    transition: transform var(--transition-normal);
+    box-shadow: 0 5px 20px rgba(124, 179, 66, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.stat-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.stat-item:hover::before {
+    opacity: 1;
+}
+
+.stat-item:hover {
+    transform: scale(1.08);
+}
+
+.stat-item h4 {
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: var(--space-xs);
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.stat-item p {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+/* ================== FORMS ================== */
+form {
+    background: var(--white);
+    padding: var(--space-xl);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px var(--shadow);
+    max-width: 600px;
+    margin: var(--space-xl) auto;
+}
+
+.form-group {
+    margin-bottom: var(--space-md);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--space-xs);
+    font-weight: 600;
+    color: var(--primary-green);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: var(--font-primary);
+    transition: all var(--transition-normal);
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--accent-green);
+    box-shadow: 0 0 0 4px rgba(124, 179, 66, 0.15);
+}
+
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+    outline: 2px solid var(--accent-green);
+    outline-offset: 2px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    background: var(--accent-green);
+    color: var(--white);
+    padding: var(--space-md) var(--space-xl);
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    display: block;
+    margin: var(--space-lg) auto 0;
+    box-shadow: 0 4px 15px rgba(124, 179, 66, 0.3);
+}
+
+button:hover {
+    background: var(--secondary-green);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(124, 179, 66, 0.4);
+}
+
+button:focus-visible {
+    outline: 3px solid var(--warm-orange);
+    outline-offset: 3px;
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ================== CONTACT PAGE ================== */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+}
+
+.contact-info {
+    background: var(--bg-light);
+    padding: var(--space-xl);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px var(--shadow);
+}
+
+.contact-info h3 {
+    margin-bottom: var(--space-md);
+    color: var(--primary-green);
+}
+
+.contact-info img {
+    margin: var(--space-md) 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--shadow);
+}
+
+.office-info {
+    margin-bottom: var(--space-md);
+    padding: var(--space-md);
+    background: var(--white);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-green);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.office-info p {
+    margin-bottom: var(--space-xs);
+}
+
+/* ================== EVENTS & ARTICLES ================== */
+article {
+    background: var(--white);
+    padding: var(--space-xl);
+    margin-bottom: var(--space-xl);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px var(--shadow);
+    border-left: 5px solid var(--accent-green);
+    transition: all var(--transition-normal);
+}
+
+article:hover {
+    transform: translateX(5px);
+    box-shadow: 0 8px 30px var(--shadow-hover);
+}
+
+article h3 {
+    color: var(--primary-green);
+    margin-bottom: var(--space-sm);
+}
+
+article img {
+    margin: var(--space-md) 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px var(--shadow);
+    transition: transform var(--transition-slow);
+}
+
+article:hover img {
+    transform: scale(1.02);
+}
+
+article p {
+    line-height: 1.7;
+}
+
