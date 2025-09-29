@@ -50,9 +50,14 @@ A responsive, multi-page website for **GreenSteps Community Gardens**, a non-pro
 ---
 
 ## Screenshots
-- Desktop View  
-- Tablet View  
-- Mobile View  
+- <img width="1293" height="692" alt="Desktop" src="https://github.com/user-attachments/assets/dea43055-c2fa-4b40-a721-67a9eab77aa2" />
+Desktop View
+
+-  <img width="744" height="682" alt="Tablet" src="https://github.com/user-attachments/assets/726af05e-3234-4e7b-8727-c0d3ee952ea7" />
+ Tablet View
+  
+- <img width="752" height="687" alt="Mobile" src="https://github.com/user-attachments/assets/7896b26d-8cde-4121-ac6d-38309ce1ad51" />
+  Mobile View  
 
 ---
 
