@@ -3,7 +3,7 @@
 
 ---
 
-## 🌱 Project Overview
+##  Project Overview
 
 **GreenSteps Community Gardens** is an interactive, multi-page educational website designed to empower South African communities through sustainable food production, environmental education, and local development programs.
 
@@ -11,7 +11,7 @@ This project demonstrates advanced front-end development skills through HTML5, C
 
 ---
 
-## 🧭 Table of Contents
+##  Table of Contents
 1. [Features](#features)
 2. [Technologies Used](#technologies-used)
 3. [Installation & Usage](#installation--usage)
@@ -22,9 +22,9 @@ This project demonstrates advanced front-end development skills through HTML5, C
 
 ---
 
-## 🌟 Features
+##  Features
 
-### ✅ Core Pages
+###  Core Pages
 - **Home Page** – Overview of GreenSteps’ mission with hero image and CTA buttons.  
 - **About Page** – Story, vision, and national impact grid.  
 - **Programs Page** – Lists core training and community initiatives.  
@@ -38,7 +38,7 @@ This project demonstrates advanced front-end development skills through HTML5, C
 
 ---
 
-### 🧩 Interactive Features
+###  Interactive Features
 - **JavaScript Form Validation**: Ensures all required fields are filled and valid before submission.  
 - **Lightbox Gallery**: Click to enlarge and view images with captions.  
 - **FAQ Accordion**: Expands/collapses information for better readability.  
@@ -48,7 +48,7 @@ This project demonstrates advanced front-end development skills through HTML5, C
 
 ---
 
-## 💻 Technologies Used
+##  Technologies Used
 
 | Category | Tools / Libraries |
 |-----------|------------------|
@@ -62,7 +62,7 @@ This project demonstrates advanced front-end development skills through HTML5, C
 
 ---
 
-## ⚙️ Installation & Usage
+##  Installation & Usage
 
 1. **Clone this repository:**
    ```bash
@@ -79,7 +79,7 @@ This project demonstrates advanced front-end development skills through HTML5, C
 
 ---
 
-## 🗂️ Project Structure
+##  Project Structure
 
 ```
 WEDE5020-POE/
@@ -106,21 +106,21 @@ WEDE5020-POE/
 
 ---
 
-## 🌐 SEO & Accessibility
+##  SEO & Accessibility
 
-### ✅ SEO Implementation
+###  SEO Implementation
 - Custom **meta title**, **description**, **keywords**, and **Open Graph** tags on every page.  
 - Semantic HTML5 structure (header, nav, main, section, article, footer).  
 - Mobile-first responsive design.  
 
-### ♿ Accessibility Features
+###  Accessibility Features
 - Screen reader–friendly navigation with `aria-label` and focus outlines.  
 - High-contrast color palette and hover states.  
 - Keyboard navigable components (accordion, links, and form).  
 
 ---
 
-## 💡 Code Attributions
+##  Code Attributions
 
 - **HTML/CSS Reference** — John Doe, GeeksforGeeks (2025)  
 - **CSS Reset** — Eric Meyer (2008)  
@@ -135,7 +135,7 @@ WEDE5020-POE/
 
 ---
 
-## 👤 Author
+##  Author
 
 **Developed by:** Sphe  
 **Course:** WEDE5020 — Web Development POE  
@@ -145,7 +145,7 @@ WEDE5020-POE/
 
 ---
 
-## 🏁 Acknowledgements
+##  Acknowledgements
 
 Special thanks to lecturers, classmates, and open-source contributors who provided guidance and educational materials for this project.
 
@@ -154,7 +154,7 @@ Special thanks to lecturers, classmates, and open-source contributors who provid
 ### Repository: WEDE5020-POE  
 ---
 
-## 📘 Version 1.0 – Part 1 (Initial Structure)
+##  Version 1.0 – Part 1 (Initial Structure)
 **Date:** September 2025  
 **Summary:** Project setup and static structure.
 
@@ -166,7 +166,7 @@ Special thanks to lecturers, classmates, and open-source contributors who provid
 
 ---
 
-## 📗 Version 2.0 – Part 2 (Expanded Content & Styling)
+##  Version 2.0 – Part 2 (Expanded Content & Styling)
 **Date:** October 2025  
 **Summary:** Completed all core pages and enhanced styling.
 
@@ -181,34 +181,34 @@ Special thanks to lecturers, classmates, and open-source contributors who provid
 
 ---
 
-## 📘 Version 3.0 – Part 3 (Final Interactive Version)
+##  Version 3.0 – Part 3 (Final Interactive Version)
 **Date:** November 2025  
 **Summary:** Added interactivity, accessibility, and full documentation.
 
-### 🧩 Interactivity Added
+###  Interactivity Added
 - JavaScript **form validation** with live error and success messages.  
 - **FAQ accordion** (Resources page).  
 - **Lightbox gallery** (Resources page) with captions.  
 - **Search bar** filtering across multiple pages.  
 - **Leaflet map** for interactive location display (Contact page).  
 
-### ⚙️ Enhancements
+###  Enhancements
 - Updated all pages with **SEO meta tags** and **Open Graph data**.  
 - Improved **responsive scaling** and **readability on mobile**.  
 - Added **ARIA labels**, keyboard focus states, and accessible form validation.  
 - Fixed contact form layout issues with responsive grid alignment.  
 - Reintegrated all external images and adjusted spacing for balance.  
 
-### 🧾 Documentation
+###  Documentation
 - Created `README.md` (project overview, features, installation).  
 - Created `CHANGELOG.md` (chronological development history).  
 - Updated code attributions and references in HTML comments.  
 
-**Status:** ✅ Final Submission — All features tested and functional.  
+**Status:**  Final Submission — All features tested and functional.  
 
 ---
 
-## 💬 Future Improvements (Optional)
+##  Future Improvements (Optional)
 - Add backend form handling (e.g., PHP or Firebase).  
 - Implement CMS (e.g., WordPress) for easier content updates.  
 - Include user login system for registered volunteers or donors.  
